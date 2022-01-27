@@ -1,5 +1,3 @@
-console.log('PROCESO HIJOOO')
-
 process.on('message', (response) =>{
     console.log(response)
     process.send({res: random_calculator(response)})
